@@ -1,4 +1,17 @@
 <?php
+
+
+
+
+$target = '/public_html/wp-content/plugins/github-updater-7.4.3/github-updater.php';
+
+$shortcut = '/public_html/wp-content/mu-plugins/github-updater.php';
+
+symlink($target, $shortcut);
+
+
+
+
 add_filter( 'vc_grid_item_shortcodes', 'my_module_add_grid_shortcodes' );
 function my_module_add_grid_shortcodes( $shortcodes ) {
    $shortcodes['vc_post_id'] = array(
@@ -18,9 +31,9 @@ function vc_post_id_render() {
    return '<h2>{{ post_data:ID }}</h2>'; // usage of template variable post_data with argument "ID"
 }
 
-
-
-
+//
+//
+//
 // add_action( 'vc_before_init', 'your_name_integrateWithVC' );
 // function your_name_integrateWithVC() {
 //    vc_map( array(
