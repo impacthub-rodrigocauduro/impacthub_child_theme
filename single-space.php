@@ -3,6 +3,7 @@
 <div class="container">
   <?php while ( have_posts() ) { the_post(); ?>
 
+            space
 
             <h1><?php the_title(); ?></h1>
             <?php the_post_thumbnail( 'full' );  ?>
