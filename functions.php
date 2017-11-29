@@ -1,5 +1,6 @@
 <?php
 //comment
+// comment 2
 add_filter( 'vc_grid_item_shortcodes', 'my_module_add_grid_shortcodes' );
 function my_module_add_grid_shortcodes( $shortcodes ) {
    $shortcodes['vc_post_id'] = array(
