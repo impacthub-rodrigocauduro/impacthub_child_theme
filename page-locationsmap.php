@@ -191,7 +191,7 @@
                   marker.addListener('click', function() {
                     // console.log(this.title,aLocations, aLocations[this.title] );
                     infoWindow.setContent(
-                      '<h3>'+aLocations[this.title].gsx$ihname.$t+'</h3>'+'<h5>'+aLocations[this.title].gsx$status.$t+'</h5>'
+                      '<h3>'+aLocations[this.title].gsx$ihname.$t+'</h3>'+'<h5><a href="http://'+aLocations[this.title].gsx$website.$t+'" target="_BLANK">'+aLocations[this.title].gsx$website.$t+'</a></h5>'
 
                     );
 
