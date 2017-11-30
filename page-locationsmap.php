@@ -190,7 +190,10 @@
 
                   marker.addListener('click', function() {
                     // console.log(this.title,aLocations, aLocations[this.title] );
-                    infoWindow.setContent( aLocations[this.title].gsx$ihname.$t );
+                    infoWindow.setContent(
+                      '<h3>'+aLocations[this.title].gsx$ihname.$t+'</h3>'+'<h5>'+aLocations[this.title].gsx$status.$t+'</h5>'
+
+                    );
 
                     var lat  = aLocations[this.title].gsx$latitude.$t;
                     var long = aLocations[this.title].gsx$longitude.$t;
@@ -234,8 +237,9 @@
 
 
 
+
                 var markerCluster = new MarkerClusterer(map, markers,
-                  {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+                  {imagePath: iconBase+''});
                 // marker.setMap(map);
         });
       }
